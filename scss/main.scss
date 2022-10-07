@@ -113,11 +113,9 @@
     font-weight: 700;
     margin-bottom: 30px;
   }
-}
-
-#introduce {
-  overflow: hidden;
-  background: #f4f4f4;
+  .banner {
+    margin-top: 100px;
+  }
   .btns {
     position: absolute;
     right: 0;
@@ -126,8 +124,13 @@
       font-size: 32px;
     }
   }
+}
+
+#introduce {
+  overflow: hidden;
+  background: #f4f4f4;
+
   .banner {
-    margin-top: 100px;
     ul {
       li {
         height: 380px;
@@ -173,17 +176,8 @@
 
 #activity {
   overflow: hidden;
-  .btns {
-    position: absolute;
-    right: 0;
-    top: 50px;
-    i {
-      font-size: 32px;
-    }
-  }
-  .banner {
-    margin-top: 100px;
 
+  .banner {
     ul {
       li {
         img {
@@ -204,6 +198,35 @@
           }
           p {
             margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#notice {
+  overflow: hidden;
+  background-color: #f4f4f4;
+  .container {
+    overflow: hidden;
+  }
+  .banner {
+    ul {
+      li {
+        // border-top-style: solid;
+        // border-top-width: 3px;
+        // border-top-color: #000;
+        border-top: 3px solid #000;
+        h3 {
+          font-size: $h3;
+          @include multiElilipsis;
+          margin: 30px 0;
+        }
+        .date {
+          margin-top: 50px;
+          span {
+            color: $main-color;
           }
         }
       }
